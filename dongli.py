@@ -16,6 +16,7 @@ class SurveyGUI(Tk):
         self.create_variables()
         self.init_ui()
         self.create_ui(self.container)
+        # create an event listener for window resize
         self.container.bind("<Configure>", self.on_window_resize)
 
     def create_styles(self):
